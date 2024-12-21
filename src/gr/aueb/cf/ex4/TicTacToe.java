@@ -1,6 +1,6 @@
 package gr.aueb.cf.ex4;
 
-import java.util.NoSuchElementException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -10,12 +10,9 @@ public class TicTacToe {
     public static char[][] gameBoard = new char[3][3];
     public static char gamePlayer = 'X';
 
-    public static void main(String[] args) throws NoSuchElementException {
-        try {
+    public static void main(String[] args) {
+
             gameMenu();//Καλούμε την διαδικασια του παιχνιδιού
-        } catch (NoSuchElementException e) {
-            System.out.print("How about another game");
-        }
     }
     //Δημιουργια menu για μεγαλυτερη εμπειρια του χρηστη.
     public static void gameMenu() {
