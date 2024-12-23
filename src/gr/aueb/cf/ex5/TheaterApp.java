@@ -10,14 +10,20 @@ import java.util.Scanner;
 
 public class TheaterApp {
 
-    public static boolean[][] seats = new boolean[30][12];
+    /**
+     * Δημιουργια εφαρμογης Θεατρου το οποιο περιλαμβανει κρατηση θεσης, ακυρωση θεσης
+     * εμφανιση θεσεων θεατρου αλλα και εκτυπωση σε αρχειο της κρατησης θεσης που εγινε.
+     */
+
+    public static boolean[][] seats = new boolean[30][12]; // Δηλωση οριων των θεσεων του θεάτρου.
 
     public static void main(String[] args) {
-        theaterApp();
+
+        theaterApp(); // Καλεσμα της εφαρμογης του θεάτρου.
     }
 
 
-    public static void theaterApp() {
+    public static void theaterApp() { // Δημιουργια του μενου χρηστη.
         Scanner scanner = new Scanner(System.in);
         char column;
         int row;
@@ -75,7 +81,7 @@ public class TheaterApp {
         }
     }
 
-    public static void reserve(char column, int row) {
+    public static void reserve(char column, int row) { // Μεθοδος για το κλεισιμο θεσης.
         int col = column - 'A';
         int r = row - 1;
 
@@ -93,7 +99,7 @@ public class TheaterApp {
         }
     }
 
-    public static void cancelReserve(char column, int row) {
+    public static void cancelReserve(char column, int row) { //Μεθοδος για την ακυρωση θεσης.
         int col = column - 'A';
         int r = row - 1;
 
@@ -109,7 +115,7 @@ public class TheaterApp {
         }
     }
 
-    public static void printSpectatorSeat() {
+    public static void printSpectatorSeat() { // Μεθοδος για τον ελεγχο των θεσεων του θεατρου.
         System.out.println("Theater seat status: ");
 
         for (int i = 0; i < 30; i++) {
@@ -125,7 +131,7 @@ public class TheaterApp {
         }
     }
 
-    public static void printTicket() {
+    public static void printTicket() { //Μεθοδος για την εκτθπωση εισητηριου
 
         File outTicket = new File("c:/tmp/printTicket.txt");
 
