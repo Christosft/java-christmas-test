@@ -1,4 +1,4 @@
-package gr.aueb.cf.ex3;
+package gr.aueb.cf.ex1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
