@@ -65,17 +65,16 @@ public class LuckyNumbersApp {
 
                                 ps.println(Arrays.toString(row));
 
-                                boolean isEven = false;
-                                boolean isOdd = false;
-                                boolean sameEnding = false;
-                                boolean consecutive = false;
+                                boolean isEven = isEven(row, 5);
+                                boolean isOdd = isOdd(row, 5);
+                                boolean sameEnding = sameEnding(row, 3);
+                                boolean consecutive = consecutive(row);
 
-                                if (!isEven(row, 5) && !isOdd(row, 5) && !sameEnding(row, 3) && !consecutive(row)) {
+
                                     ps.println("1.More tha four evens: " + isEven + "\n" +
                                             "2.More than four odds: " + !isOdd + "\n" +
                                             "3.More than three with the same ending: " + !sameEnding + "\n" +
                                             "4.More than three numbers: " + consecutive);
-                                }
 
                             }
                         }
