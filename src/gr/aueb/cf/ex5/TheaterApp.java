@@ -85,7 +85,6 @@ public class TheaterApp {
         int col = column - 'A';
         int r = row - 1;
 
-        System.out.println(Arrays.deepToString(seats));
         if (r < 0 || r > 30 || col < 0 || col > 12) {
             System.out.println("Wrong seat input. \n" +
                     "Please give a valid choice");
@@ -152,7 +151,7 @@ public class TheaterApp {
             ticket.println();
             ticket.println("""
                     Thank you for choosing our theater. Please don not loose your ticket\s
-                    (If that happens please attend to the information desk\s
+                    If that happens please attend to the information desk ,\s
                     Refunds will not be available two days before the play\s
                     THANK YOU AND ENJOY THE SHOW!""");
             System.out.println("Your ticket is ready for printing.");
