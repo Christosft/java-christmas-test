@@ -52,7 +52,7 @@ public class Project_3 {
                 }
 
             } catch (FileNotFoundException e) {
-                System.err.println("The is not found or cannot be created.");
+                System.err.println("The file is not found or cannot be created.");
             }
         }
     }
