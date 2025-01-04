@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class JokerAppWithRandom {
+public class LuckyNumbersAppRandom {
 
     /**
      * Δημιουργια μια εφαρμογης τυπου Joker στην οποια διαβαζουμε απο ενα αρχειο

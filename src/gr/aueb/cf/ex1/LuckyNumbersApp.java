@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class JokerApp {
+public class LuckyNumbersApp {
 
     /**
      * Δημιουργια μια εφαρμογης τυπου Joker στην οποια διαβαζουμε απο ενα αρχειο
